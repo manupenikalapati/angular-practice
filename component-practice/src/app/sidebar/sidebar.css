@@ -1,0 +1,15 @@
+.sidebar-container {
+    width: 200px;
+    background-color: rgb(177, 172, 172);
+    height: 80vh;
+}
+
+.sidebar-list {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+li {
+    padding: 10px;
+    cursor: pointer;
+}
