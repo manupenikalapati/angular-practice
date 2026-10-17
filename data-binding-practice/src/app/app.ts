@@ -10,7 +10,9 @@ import { RouterOutlet } from '@angular/router';
 export class App {
   primeMinisterName = "Modi"
   studentName = "Manmohan"
-
+  myImage = "/images/house.jpg"
+  d = new Date()
+  cname = "nameStyle"
   showName() {
     return this.primeMinisterName
   }
