@@ -1,8 +1,17 @@
-<h1 class={{cname}}>{{showName()}}</h1>  <!--interpolation-->
-<h1>{{studentName}}</h1> <!--interpolation-->
-<h1>{{100 * 3}}</h1>  <!--interpolation-->
-<img src={{myImage}} alt="no image" class="my-image"/>  
-<h1>{{d}}</h1>
 
+<!--string interpolation-->
+<h1>String interpolation</h1>
+<p class={{cname}}>{{showName()}}</p>  <!--interpolation-->
+<p>{{studentName}}</p> <!--interpolation-->
+<p>{{100 * 3}}</p>  <!--interpolation-->
+<img src={{myImage}} alt="no image" class="my-image"/>  <!--interpolation-->
+<p>{{d}}</p> <!--interpolation-->
+
+
+<!--property binding practice-->
+<h1>Property binding</h1>
+Name: <input [value]=inputValue/> <button class="btn btn-primary m-2" [disabled]=isdisabled>Submit</button> <br>
+Mobile: <input [hidden]=ishidden/>
+<p [textContent]=playerName></p>
 
 <router-outlet />

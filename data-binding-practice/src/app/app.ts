@@ -16,4 +16,9 @@ export class App {
   showName() {
     return this.primeMinisterName
   }
+
+  isdisabled: boolean = true
+  playerName = "Sachin Tendulkar"
+  inputValue = "Virat Kohli"
+  ishidden = true
 }
