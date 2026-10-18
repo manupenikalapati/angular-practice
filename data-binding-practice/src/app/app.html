@@ -16,7 +16,7 @@ Mobile: <input [hidden]=ishidden/>
 
 <!--class binding-->
 
-<h1 [class.active]='isactive'>Employee Status</h1>
+<h1 [class.active]='isActive' [class.inactive]="!isActive">Employee Status</h1>
 <button (click)="changeStatus()">Change Status</button>
 
 

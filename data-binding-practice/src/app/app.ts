@@ -8,6 +8,9 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.html',
 })
 export class App {
+
+  //string interpolation
+
   primeMinisterName = "Modi"
   studentName = "Manmohan"
   myImage = "/images/house.jpg"
@@ -17,7 +20,7 @@ export class App {
     return this.primeMinisterName
   }
 
-  
+  //property binding
 
   isdisabled: boolean = true
   playerName = "Sachin Tendulkar"
@@ -26,9 +29,9 @@ export class App {
 
   //class binding
 
-  isactive:boolean = true
+  isActive:boolean = true
 
   changeStatus() {
-    this.isactive = !this.isactive
+    this.isActive = !this.isActive
   }
 }
