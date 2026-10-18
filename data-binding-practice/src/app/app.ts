@@ -21,4 +21,6 @@ export class App {
   playerName = "Sachin Tendulkar"
   inputValue = "Virat Kohli"
   ishidden = true
+
+  isactive = false
 }
