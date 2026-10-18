@@ -17,10 +17,18 @@ export class App {
     return this.primeMinisterName
   }
 
+  
+
   isdisabled: boolean = true
   playerName = "Sachin Tendulkar"
   inputValue = "Virat Kohli"
   ishidden = true
 
-  isactive = false
+  //class binding
+
+  isactive:boolean = true
+
+  changeStatus() {
+    this.isactive = !this.isactive
+  }
 }

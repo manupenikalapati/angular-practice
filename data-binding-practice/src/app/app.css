@@ -9,5 +9,9 @@
 }
 
 .active {
-    background-color: green;
+    color: green;
+}
+
+.inactive {
+    color: red;
 }
