@@ -7,12 +7,14 @@
 <img src={{myImage}} alt="no image" class="my-image"/>  <!--interpolation-->
 <p>{{d}}</p> <!--interpolation-->
 
-
+<hr>
 <!--property binding practice-->
 <h1>Property binding</h1>
 Name: <input [value]=inputValue/> <button class="btn btn-primary m-2" [disabled]=isdisabled>Submit</button> <br>
 Mobile: <input [hidden]=ishidden/>
 <p [textContent]=playerName></p>
+
+<hr>
 
 <!--class binding-->
 
@@ -23,4 +25,34 @@ Mobile: <input [hidden]=ishidden/>
 <h1 [class]="isActive ? 'active' : 'inactive'">Employee Status</h1>
 
 <h1 [class.myactive]="isactive" [class.large]="isLarge" [class.highlighted]="isHighlighted">Employee Details</h1>
+
+<hr>
+<!--Event binding-->
+
+<h1>Click a button to change status</h1>
+<p>Clicked button: {{count}} times</p>
+<button class="btn btn-danger" (click)="toCount()">Click Me</button>
+
+<h3>Employee Attendence</h3>
+
+<h1>{{result}}</h1>
+<button (click)="toMarkAttendence()">Mark Attendence</button>
+
+<!--respond to button clickes-->
+<h5>{{message}}</h5>
+<button class="btn btn-success" (click)="changeMessage()">Click Me</button><br>
+
+<!--Two way data binding-->
+<input type="text" [ngModel]="employeeName" (ngModelChange)="onChangeValue($event)"/>
+<p>Employee Name: {{employeeName}}</p>
+
+
+<!--Style binding-->
+<p [style.color]="textColor">Angular</p>
+<button (click)="toRed()">Red</button>
+<button (click)="toBlue()">Blue</button>
+<button (click)="toGreen()">Green</button>
 <router-outlet />
+
+
+
