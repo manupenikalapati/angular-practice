@@ -34,4 +34,9 @@ export class App {
   changeStatus() {
     this.isActive = !this.isActive
   }
+
+  //multiple class bindings on one element
+  isactive = true
+  isLarge = true
+  isHighlighted = true
 }

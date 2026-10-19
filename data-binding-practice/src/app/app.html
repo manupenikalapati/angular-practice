@@ -16,8 +16,11 @@ Mobile: <input [hidden]=ishidden/>
 
 <!--class binding-->
 
+
 <h1 [class.active]='isActive' [class.inactive]="!isActive">Employee Status</h1>
 <button (click)="changeStatus()">Change Status</button>
 
+<h1 [class]="isActive ? 'active' : 'inactive'">Employee Status</h1>
 
+<h1 [class.myactive]="isactive" [class.large]="isLarge" [class.highlighted]="isHighlighted">Employee Details</h1>
 <router-outlet />
